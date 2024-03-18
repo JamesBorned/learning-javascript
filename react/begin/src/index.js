@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(
-    React.createElement('button', {
-      onClick: () => console.log('CLICK')
-    },'Нажми на меня!'),
+    // React.createElement('button', {
+    //   //слушатель события
+    //   onClick: () => console.log('CLICK') //стрелочная функция
+    // },'Нажми на меня!'),
+    <App/>,
   document.getElementById('root')
 );
