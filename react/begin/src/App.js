@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Counter from "./components/Counter"
 
 function App() {
   // let likes = 0;
@@ -7,22 +8,16 @@ function App() {
   //   likes += 1;
   //   console.log(likes);
   // }
-  const [likes, setLikes] = useState(0) //состояние, функция
-  console.log(setLikes)
-  
-  function increment(){
-    setLikes(likes + 1)
-  }
+  // const [likes, setLikes] = useState(0) //состояние, функция
+  // const [value, setValue] = useState('TEXT IN INPUT')
 
-  function decrement(){
-    setLikes(likes - 1)
-  }
+  //console.log(setLikes)
 
   return (
     <div className="App">
-      <h1>{likes}</h1>
-      <button onClick={increment}>Increnent</button>
-      <button onClick={decrement}>Decrement</button>
+      <Counter/>
+      <Counter/>
+      <Counter/>
     </div>
   );
 }
