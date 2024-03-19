@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+//функциональный компонент, возвращает 
 const Counter = function () {
     const [count, setCount] = useState(0)
 
